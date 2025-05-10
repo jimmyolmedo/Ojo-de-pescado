@@ -3,31 +3,31 @@ using UnityEngine.InputSystem;
 
 public class PlayerMovement : MonoBehaviour
 {
-    float rad = 0;
-    [SerializeField] float speed = 5;
-    [SerializeField] float distance = 2;
+    //variables
+    [SerializeField] Rigidbody2D rb;
+    [SerializeField] float speed;
     Vector2 move;
+    [SerializeField] bool canMove = true;
 
+    //methods
+    private void FixedUpdate()
+    {
+        rb.linearVelocity = new Vector2(move.x, move.y) * speed * Time.deltaTime;
+    }
     private void Update()
     {
-        //rad -= speed * Time.deltaTime;
-        if (move.x > 0) { rad -= speed * Time.deltaTime; }
-        else if (move.x < 0) { rad += speed * Time.deltaTime; }
-
-        float sin = Mathf.Sin(rad) * distance;
-        float cos = Mathf.Cos(rad) * distance;
-
-        transform.localPosition = new Vector3(cos, sin, 0);
-
-        Vector3 tangent = new Vector3(-Mathf.Sin(rad), Mathf.Cos(rad), 0);
-
-        transform.right = -tangent;
+        if (canMove == false)
+        {
+            move = Vector2.zero;
+        }
     }
 
     public void Move(InputAction.CallbackContext context)
     {
+        if (GameManager.CurrentState != GameState.Gameplay) { return; }
+
         move = context.ReadValue<Vector2>();
-        //if (_move.x > 0) { rad -= speed * Time.deltaTime; }
-        //else if (_move.x < 0) { rad += speed * Time.deltaTime; }
     }
+
+
 }
