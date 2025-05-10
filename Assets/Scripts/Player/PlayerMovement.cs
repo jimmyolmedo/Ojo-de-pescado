@@ -7,7 +7,10 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] Rigidbody2D rb;
     [SerializeField] float speed;
     Vector2 move;
-    [SerializeField] bool canMove = true;
+    bool canMove = true;
+
+    //properties
+    public bool CanMove {  get => canMove; set => canMove = value; }
 
     //methods
     private void FixedUpdate()

@@ -1,4 +1,5 @@
 using JetBrains.Annotations;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -12,6 +13,7 @@ public class Player : MonoBehaviour
     int currentHealth;
     [SerializeField] Transform pointDetect;
     [SerializeField] float ratioDetect;
+    [SerializeField] PlayerMovement pM;
 
     //properties
     //controla la vida del jugador
@@ -41,6 +43,7 @@ public class Player : MonoBehaviour
         //comprobar si el jugador esta presionando el boton(mantener presionado)
         if (context.started)
         {
+            pM.CanMove = false;
             //atraer los objetos hacia el jugador
             if (colls.Length != 0)
             {
@@ -57,6 +60,7 @@ public class Player : MonoBehaviour
 
         if(context.canceled)
         {
+            pM.CanMove = true;
             if (colls.Length != 0)
             {
                 foreach (Collider2D coll in colls)

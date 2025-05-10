@@ -317,7 +317,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rb: {fileID: 7397809966995824777}
   speed: 200
-  canMove: 1
 --- !u!50 &7397809966995824777
 Rigidbody2D:
   serializedVersion: 5
@@ -519,6 +518,7 @@ MonoBehaviour:
   maxHeath: 3
   pointDetect: {fileID: 242765077910814898}
   ratioDetect: 0.8
+  pM: {fileID: 2816369395105309675}
 --- !u!1 &4323909108233647308
 GameObject:
   m_ObjectHideFlags: 0
