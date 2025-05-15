@@ -16,10 +16,17 @@ public class SceneManager : Singleton<SceneManager>
         base.Awake();
     }
 
-    
+    public void QuitGame()
+    {
+        Application.Quit();
+    }
+
     public void LoadScene(string sceneName)
     {
-        
+        if (isLoading) return;
+
+        isLoading = true;
+        StartCoroutine(AnimationChangeScene(sceneName));
     }
 
 
@@ -27,7 +34,7 @@ public class SceneManager : Singleton<SceneManager>
     {
         animator.Play("changeScene");
         yield return new WaitForSeconds(.55f);
+        isLoading = false;
         UnitySceneManager.LoadScene(_sceneName);
     }
-
 }
