@@ -56,6 +56,7 @@ public class Player : MonoBehaviour
                     if (coll.TryGetComponent(out Trush trush))
                     {
                         trush.ChangeTarget(transform.position);
+                        trush.Speed += 3f;
                         Debug.Log("estoy atrayendo enemigos");
                     }
                 }
@@ -73,6 +74,7 @@ public class Player : MonoBehaviour
                     if (coll.TryGetComponent(out Trush trush))
                     {
                         trush.ChangeTarget(Planet.instance.transform.position);
+                        trush.Speed -= 3f;
                     }
                 }
             }

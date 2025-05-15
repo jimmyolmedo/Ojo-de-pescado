@@ -7,7 +7,6 @@ public class ContainerMovement : MonoBehaviour
     float rad = 0;
     [SerializeField] float speed = 5;
     [SerializeField] float distance = 2;
-    Vector2 move;
 
     private void Start()
     {

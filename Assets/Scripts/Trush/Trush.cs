@@ -7,6 +7,9 @@ public class Trush : MonoBehaviour
     [SerializeField] float speed;
     Vector2 target;
 
+    //properties
+    public float Speed { get => speed; set => speed = value; }
+
     //methods
     private void Start()
     {
