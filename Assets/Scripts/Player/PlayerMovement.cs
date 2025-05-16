@@ -15,7 +15,9 @@ public class PlayerMovement : MonoBehaviour
     //methods
     private void FixedUpdate()
     {
-        rb.linearVelocity = new Vector2(move.x, move.y) * speed * Time.deltaTime;
+        rb.linearVelocity = transform.up * move.y * speed * Time.deltaTime;
+
+        rb.rotation -= move.x * speed * Time.deltaTime;
     }
     private void Update()
     {

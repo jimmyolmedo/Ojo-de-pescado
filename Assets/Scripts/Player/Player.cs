@@ -32,6 +32,9 @@ public class Player : MonoBehaviour
     }
     //identificador del jugador
     public int PlayerID {  get => playerID;}
+
+    //determinar si el jugador esta absorbiendo basura
+    public bool IsAbsorbing { get; private set; }
     //methods
 
     //metodo para recoger los objetos(la basura)
@@ -44,6 +47,7 @@ public class Player : MonoBehaviour
         if (context.started)
         {
             pM.CanMove = false;
+            IsAbsorbing = true;
             //atraer los objetos hacia el jugador
             if (colls.Length != 0)
             {
@@ -52,6 +56,7 @@ public class Player : MonoBehaviour
                     if (coll.TryGetComponent(out Trush trush))
                     {
                         trush.ChangeTarget(transform.position);
+                        trush.Speed += 3f;
                         Debug.Log("estoy atrayendo enemigos");
                     }
                 }
@@ -61,6 +66,7 @@ public class Player : MonoBehaviour
         if(context.canceled)
         {
             pM.CanMove = true;
+            IsAbsorbing = false;
             if (colls.Length != 0)
             {
                 foreach (Collider2D coll in colls)
@@ -68,6 +74,7 @@ public class Player : MonoBehaviour
                     if (coll.TryGetComponent(out Trush trush))
                     {
                         trush.ChangeTarget(Planet.instance.transform.position);
+                        trush.Speed -= 3f;
                     }
                 }
             }
