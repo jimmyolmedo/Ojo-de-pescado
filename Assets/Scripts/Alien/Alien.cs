@@ -10,6 +10,8 @@ public class Alien : MonoBehaviour
     [SerializeField] float speed = 5;
     [SerializeField] float distance = 12;
     bool InArea;
+    [SerializeField] float minTimeAttack = 4;
+    [SerializeField] float maxTimeAttack = 7;
 
     //methods
     private void Start()
@@ -39,30 +41,35 @@ public class Alien : MonoBehaviour
     //cambiar el movimiento para lanzar la basura
     IEnumerator Attack()
     {
-        yield return new WaitForSeconds(5f);
-
-        //dejar de rotar
-        isRoting = false;
-
-        Vector2 oldPosition = transform.position;
-
-        while (InArea == false)
+        while (true)
         {
-            transform.position = Vector2.MoveTowards(transform.position, Planet.instance.transform.position, 3f * Time.deltaTime);
-            yield return null;
-        }
+            yield return new WaitForSeconds(Random.Range(minTimeAttack, maxTimeAttack));
 
-        //lanzar basura
+            //dejar de rotar
+            isRoting = false;
 
-        //volver a la distancia anterior
-        Vector2 initialPos = transform.position;
-        for (float i = 0; i < 1f; i += Time.deltaTime)
-        {
-            transform.position = Vector2.Lerp(initialPos, oldPosition, i/1f);
-            yield return null;
-        }
-        InArea = false;
-        isRoting = true;    
+            Vector2 oldPosition = transform.position;
+
+            while (InArea == false)
+            {
+                transform.position = Vector2.MoveTowards(transform.position, Planet.instance.transform.position, 3f * Time.deltaTime);
+                yield return null;
+            }
+
+            //lanzar basura
+
+            yield return new WaitForSeconds(3f);
+
+            //volver a la distancia anterior
+            Vector2 initialPos = transform.position;
+            for (float i = 0; i < 1f; i += Time.deltaTime)
+            {
+                transform.position = Vector2.Lerp(initialPos, oldPosition, i / 1f);
+                yield return null;
+            }
+            InArea = false;
+            isRoting = true;
+        }  
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
