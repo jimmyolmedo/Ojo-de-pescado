@@ -1,0 +1,325 @@
+fileFormatVersion: 2
+guid: 5449d58a25f60f54fba5ed71a8be7684
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1634574399537448538
+    second: "sprite alien Animaci\xF3n tentaculo DER_0"
+  - first:
+      213: 4697558659485455560
+    second: "sprite alien Animaci\xF3n tentaculo DER_1"
+  - first:
+      213: -526820331527395148
+    second: "sprite alien Animaci\xF3n tentaculo DER_2"
+  - first:
+      213: 3626611578786377155
+    second: "sprite alien Animaci\xF3n tentaculo DER_3"
+  - first:
+      213: 8058288842615490609
+    second: "sprite alien Animaci\xF3n tentaculo DER_4"
+  - first:
+      213: 5063710626432837069
+    second: "sprite alien Animaci\xF3n tentaculo DER_5"
+  - first:
+      213: -2734945577527641817
+    second: "sprite alien Animaci\xF3n tentaculo DER_6"
+  - first:
+      213: -8203029305279554186
+    second: "sprite alien Animaci\xF3n tentaculo DER_7"
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 600
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: "sprite alien Animaci\xF3n tentaculo DER_0"
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 2077
+        width: 1504
+        height: 721
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a97f947e33d059e0800000000000000
+      internalID: -1634574399537448538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "sprite alien Animaci\xF3n tentaculo DER_1"
+      rect:
+        serializedVersion: 2
+        x: 1976
+        y: 1972
+        width: 1549
+        height: 826
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c4d03a46b4113140800000000000000
+      internalID: 4697558659485455560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "sprite alien Animaci\xF3n tentaculo DER_2"
+      rect:
+        serializedVersion: 2
+        x: 3735
+        y: 1900
+        width: 1346
+        height: 898
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b82bde13bb50b8f0800000000000000
+      internalID: -526820331527395148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "sprite alien Animaci\xF3n tentaculo DER_3"
+      rect:
+        serializedVersion: 2
+        x: 5437
+        y: 1873
+        width: 1287
+        height: 1167
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3cd61eb2400545230800000000000000
+      internalID: 3626611578786377155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "sprite alien Animaci\xF3n tentaculo DER_4"
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 365
+        width: 1287
+        height: 1024
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1380799f10bc4df60800000000000000
+      internalID: 8058288842615490609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "sprite alien Animaci\xF3n tentaculo DER_5"
+      rect:
+        serializedVersion: 2
+        x: 1991
+        y: 362
+        width: 1291
+        height: 1171
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc566ed6cf9e54640800000000000000
+      internalID: 5063710626432837069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "sprite alien Animaci\xF3n tentaculo DER_6"
+      rect:
+        serializedVersion: 2
+        x: 3653
+        y: 392
+        width: 1784
+        height: 970
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7297073dc758b0ad0800000000000000
+      internalID: -2734945577527641817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "sprite alien Animaci\xF3n tentaculo DER_7"
+      rect:
+        serializedVersion: 2
+        x: 5647
+        y: 569
+        width: 1734
+        height: 721
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67d51b0fe4cf82e80800000000000000
+      internalID: -8203029305279554186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      "sprite alien Animaci\xF3n tentaculo DER_0": -1634574399537448538
+      "sprite alien Animaci\xF3n tentaculo DER_1": 4697558659485455560
+      "sprite alien Animaci\xF3n tentaculo DER_2": -526820331527395148
+      "sprite alien Animaci\xF3n tentaculo DER_3": 3626611578786377155
+      "sprite alien Animaci\xF3n tentaculo DER_4": 8058288842615490609
+      "sprite alien Animaci\xF3n tentaculo DER_5": 5063710626432837069
+      "sprite alien Animaci\xF3n tentaculo DER_6": -2734945577527641817
+      "sprite alien Animaci\xF3n tentaculo DER_7": -8203029305279554186
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -25,6 +25,7 @@ public class SceneManager : Singleton<SceneManager>
     {
         if (isLoading) return;
 
+        Time.timeScale = 1;
         isLoading = true;
         StartCoroutine(AnimationChangeScene(sceneName));
     }

@@ -1,4 +1,5 @@
 using JetBrains.Annotations;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -11,10 +12,15 @@ public class Player : MonoBehaviour
     [Header("Player Health")]
     [SerializeField] int maxHeath;
     int currentHealth;
+    bool isInvul = false;
     [SerializeField] Transform pointDetect;
     [SerializeField] float ratioDetect;
     [SerializeField] PlayerMovement pM;
 
+    [Header("Visual")]
+    [SerializeField] private Animator animator;
+    [SerializeField] private SpriteRenderer spriteRenderer;
+    [SerializeField] private Color damageColor;
     //properties
     //controla la vida del jugador
     public int CurrentHealth
@@ -24,7 +30,7 @@ public class Player : MonoBehaviour
         set
         {
             currentHealth = value;
-            if(currentHealth <= 0)
+            if (currentHealth <= 0)
             {
                 Die();
             }
@@ -48,6 +54,7 @@ public class Player : MonoBehaviour
         {
             pM.CanMove = false;
             IsAbsorbing = true;
+            animator.SetBool("isCollect", true);
             //atraer los objetos hacia el jugador
             if (colls.Length != 0)
             {
@@ -67,6 +74,7 @@ public class Player : MonoBehaviour
         {
             pM.CanMove = true;
             IsAbsorbing = false;
+            animator.SetBool("isCollect", false);
             if (colls.Length != 0)
             {
                 foreach (Collider2D coll in colls)
@@ -84,8 +92,9 @@ public class Player : MonoBehaviour
     //metodo para quitarle vida al jugador
     public void GetDamage(int _damage)
     {
-        //animacion de daño
-
+        if (isInvul) return;
+        //animacion de daï¿½o 
+        StartCoroutine(DamageAnim());
         //quitar vida al jugador
         CurrentHealth -= _damage;
     }
@@ -95,7 +104,23 @@ public class Player : MonoBehaviour
     {
 
     }
-
+    IEnumerator DamageAnim()
+    {
+        isInvul = true;
+        yield return null;
+        // for (float i = 0; i < 0.1f; i += Time.deltaTime)
+        int x = 0;
+        while (x < 5)
+        {
+            spriteRenderer.color = damageColor;
+            yield return new WaitForSeconds(0.25f);
+            spriteRenderer.color = new Color(1, 1, 1, 1);
+            yield return new WaitForSeconds(0.25f);
+            x++;
+        }
+        isInvul = false;
+        spriteRenderer.color = new Color(1, 1, 1, 1);
+    }
     private void OnDrawGizmos()
     {
         Gizmos.DrawWireSphere(pointDetect.position, ratioDetect);

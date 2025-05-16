@@ -44,7 +44,7 @@ public class Alien : MonoBehaviour
             Vector3 tangent = new Vector3(-Mathf.Sin(rad), Mathf.Cos(rad), 0); // tangente a la trayectoria
 
             // Apuntar hacia adelante (por ejemplo, que el frente del sprite sea "right")
-            transform.right = tangent;
+            transform.right = -tangent;
         }
     }
 
@@ -55,30 +55,33 @@ public class Alien : MonoBehaviour
         {
             yield return new WaitForSeconds(Random.Range(minTimeAttack, maxTimeAttack));
 
-            //dejar de rotar
-            isRoting = false;
+            if (GameManager.CurrentState == GameState.Gameplay)
+            {    
+                //dejar de rotar
+                isRoting = false;
 
-            Vector2 oldPosition = transform.position;
+                Vector2 oldPosition = transform.position;
 
-            while (InArea == false)
-            {
-                transform.position = Vector2.MoveTowards(transform.position, Planet.instance.transform.position, 3f * Time.deltaTime);
-                yield return null;
+                while (InArea == false)
+                {
+                    transform.position = Vector2.MoveTowards(transform.position, Planet.instance.transform.position, 3f * Time.deltaTime);
+                    yield return null;
+                }
+
+                //lanzar basura
+                InstanceAttack();
+                yield return new WaitForSeconds(1.5f);
+
+                //volver a la distancia anterior
+                Vector2 initialPos = transform.position;
+                for (float i = 0; i < 1f; i += Time.deltaTime)
+                {
+                    transform.position = Vector2.Lerp(initialPos, oldPosition, i / 1f);
+                    yield return null;
+                }
+                InArea = false;
+                isRoting = true;
             }
-
-            //lanzar basura
-            InstanceAttack();
-            yield return new WaitForSeconds(1.5f);
-
-            //volver a la distancia anterior
-            Vector2 initialPos = transform.position;
-            for (float i = 0; i < 1f; i += Time.deltaTime)
-            {
-                transform.position = Vector2.Lerp(initialPos, oldPosition, i / 1f);
-                yield return null;
-            }
-            InArea = false;
-            isRoting = true;
         }  
     }
 

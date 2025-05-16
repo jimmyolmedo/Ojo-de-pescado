@@ -6,4 +6,8 @@ public class SceneManagerRef : MonoBehaviour
     {
         SceneManager.instance.LoadScene(sceneManager);
     }
+    public void QuitGame()
+    {
+        SceneManager.instance.QuitGame();
+    }
 }

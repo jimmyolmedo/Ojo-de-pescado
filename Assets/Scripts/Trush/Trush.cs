@@ -5,6 +5,9 @@ public class Trush : MonoBehaviour
     //variables
     [SerializeField] int objID;
     [SerializeField] float speed;
+    [SerializeField] private float speedRotation;
+    
+    
     Vector2 target;
 
     //properties
@@ -18,7 +21,11 @@ public class Trush : MonoBehaviour
 
     private void Update()
     {
-        transform.position = Vector3.MoveTowards(transform.position, target, speed * Time.deltaTime);
+        if (GameManager.CurrentState == GameState.Gameplay)
+        {
+            transform.position = Vector3.MoveTowards(transform.position, target, speed * Time.deltaTime);
+            transform.Rotate(new Vector3(0,0, speedRotation * Time.deltaTime)); 
+        }
     }
 
     public void ChangeTarget(Vector2 _target)
@@ -29,7 +36,7 @@ public class Trush : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         //detectar si colisiono con un jugador y si el jugador esta absorbiendo basura
-        if(collision.TryGetComponent(out Player player))
+        if (collision.TryGetComponent(out Player player))
         {
             if (player.IsAbsorbing)
             {
@@ -37,6 +44,7 @@ public class Trush : MonoBehaviour
                 if (player.PlayerID == objID)
                 {
                     //si es igual sumarselo al "inventario"
+                    ScoreManager.instance.AddScore(5);
                     Debug.Log("tomaste el objeto correcto");
                     Destroy(gameObject);
                 }
@@ -44,9 +52,14 @@ public class Trush : MonoBehaviour
                 {
                     //si no es igual, quitarle una vida al jugador
                     Debug.Log("te equivocaste de objeto");
+                    player.GetDamage(1);
                     Destroy(gameObject);
                 }
             }
+        }
+        if (collision.TryGetComponent(out Planet planet))
+        {
+            Destroy(gameObject);
         }
 
     }

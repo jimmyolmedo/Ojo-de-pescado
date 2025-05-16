@@ -47,25 +47,26 @@ using UnityEngine;
     // Recomiendo que sea en el Start, ya que por el orden de ejecucion de scripts,
     // si esto está en el Awake, hará que se ejecute antes de que los objetos ejecuten
     // OnEnable, lo que hará que no alcancen a suscribirse al evento OnStateSwitch.
-    private void Start()
+        private void Start()
         {
             SwitchState(m_initialState);
         }
 
-        // Esta funcion es la encargada de cambiar nuestro estado desde cualquier otra
-        // clase, por ejemplo, al morir.
-        // if (health == 0) 
-        // {
-        //      GameManager.SwitchState(GameState.GameOver);
-        // }
-        public static void SwitchState(GameState state)
-        {
-            // Esta es una comparacion necesaria para evitar que se ejecuten los eventos
-            // dos veces
-            if (state == CurrentState) return;
+    // Esta funcion es la encargada de cambiar nuestro estado desde cualquier otra
+    // clase, por ejemplo, al morir.
+    // if (health == 0) 
+    // {
+    //      GameManager.SwitchState(GameState.GameOver);
+    // }
+    public static void SwitchState(GameState state)
+    {
+        // Esta es una comparacion necesaria para evitar que se ejecuten los eventos
+        // dos veces
+        if (state == CurrentState) return;
 
-            // Aqui actualizaremos la propiedad y ejecutaremos el evento.
-            CurrentState = state;
-            OnStateChange?.Invoke(state);
+        // Aqui actualizaremos la propiedad y ejecutaremos el evento.
+        CurrentState = state;
+        OnStateChange?.Invoke(state);
+        Debug.Log("Game Manager "+ CurrentState);
         }
     }

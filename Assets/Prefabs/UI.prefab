@@ -901,6 +901,7 @@ GameObject:
   - component: {fileID: 541115510085791549}
   - component: {fileID: 5439721989266852339}
   - component: {fileID: 2007139004931992011}
+  - component: {fileID: 5089193360287726019}
   m_Layer: 0
   m_Name: Tutorial
   m_TagString: Untagged
@@ -966,6 +967,19 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &5089193360287726019
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 480055685278510806}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 865208a7a6a45174f9df5d20ebf7de2e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_identifier: Tutorial
 --- !u!1 &608663465938757493
 GameObject:
   m_ObjectHideFlags: 0
@@ -2547,7 +2561,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hoverSound: {fileID: 0}
-  fill: {fileID: 6126150133917669545}
+  fill: {fileID: 489423781217680804}
   icon: {fileID: 0}
   text: {fileID: 260905247281372338}
   defaultColorPrimary: {r: 0.0627451, g: 0.09411766, b: 0.03137255, a: 1}
@@ -3086,6 +3100,7 @@ GameObject:
   - component: {fileID: 411983019289673187}
   - component: {fileID: 9191770434085328956}
   - component: {fileID: 4924038171310944300}
+  - component: {fileID: 6103947716973411720}
   m_Layer: 0
   m_Name: Pausa
   m_TagString: Untagged
@@ -3151,6 +3166,19 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &6103947716973411720
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3618748686317324790}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 865208a7a6a45174f9df5d20ebf7de2e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_identifier: Pausa
 --- !u!1 &3681917026812014913
 GameObject:
   m_ObjectHideFlags: 0
@@ -3237,6 +3265,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2972212887898734847}
   - component: {fileID: 5159845667324149675}
+  - component: {fileID: 7984237690897167743}
   m_Layer: 0
   m_Name: Gameplay
   m_TagString: Untagged
@@ -3272,6 +3301,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3757944425284609629}
   m_CullTransparentMesh: 1
+--- !u!114 &7984237690897167743
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3757944425284609629}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 865208a7a6a45174f9df5d20ebf7de2e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_identifier: Gameplay
 --- !u!1 &3879436981491258266
 GameObject:
   m_ObjectHideFlags: 0
