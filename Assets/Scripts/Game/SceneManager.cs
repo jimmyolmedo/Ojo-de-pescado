@@ -36,5 +36,6 @@ public class SceneManager : Singleton<SceneManager>
         yield return new WaitForSeconds(.55f);
         isLoading = false;
         UnitySceneManager.LoadScene(_sceneName);
+        animator.Play("sceneReady");
     }
 }
