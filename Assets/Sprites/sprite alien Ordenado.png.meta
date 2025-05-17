@@ -1,0 +1,325 @@
+fileFormatVersion: 2
+guid: 8f477570774bce847b97763d14487f90
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2168005970518667372
+    second: sprite alien Ordenado_0
+  - first:
+      213: 2468384917163337383
+    second: sprite alien Ordenado_1
+  - first:
+      213: -3509174976089435807
+    second: sprite alien Ordenado_2
+  - first:
+      213: -5278096078877895595
+    second: sprite alien Ordenado_3
+  - first:
+      213: -6122175061387569863
+    second: sprite alien Ordenado_4
+  - first:
+      213: 5270343798917987332
+    second: sprite alien Ordenado_5
+  - first:
+      213: -1287691648342303547
+    second: sprite alien Ordenado_6
+  - first:
+      213: -4833620809276218589
+    second: sprite alien Ordenado_7
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 600
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: sprite alien Ordenado_0
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 1530
+        width: 2250
+        height: 1530
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22cd71677ca8a6e4989fdeeca1c51ebf
+      internalID: -372420086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite alien Ordenado_1
+      rect:
+        serializedVersion: 2
+        x: 2425
+        y: 1530
+        width: 2250
+        height: 1530
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae782d3c627f7e24fa398f735567f001
+      internalID: -937567926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite alien Ordenado_2
+      rect:
+        serializedVersion: 2
+        x: 4675
+        y: 1530
+        width: 2250
+        height: 1530
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a48d0b4bd2105ec47ba669175ccb0269
+      internalID: -1345023295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite alien Ordenado_3
+      rect:
+        serializedVersion: 2
+        x: 6925
+        y: 1530
+        width: 2250
+        height: 1530
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72fc8f421ab9fb247b137b177e81a0db
+      internalID: -742968826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite alien Ordenado_4
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 0
+        width: 2250
+        height: 1530
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 844949dcc901dd24784ef918a4a6f6fe
+      internalID: -2053396723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite alien Ordenado_5
+      rect:
+        serializedVersion: 2
+        x: 2425
+        y: 0
+        width: 2250
+        height: 1530
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64522834efa41f6479ed8b4ca408b4be
+      internalID: 935041585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite alien Ordenado_6
+      rect:
+        serializedVersion: 2
+        x: 4675
+        y: 0
+        width: 2253
+        height: 1530
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b093f191213651244a723fd9acde0793
+      internalID: 336629747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite alien Ordenado_7
+      rect:
+        serializedVersion: 2
+        x: 6928
+        y: 0
+        width: 2247
+        height: 1530
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 292258cfab776194fbc4f5ea670d7d59
+      internalID: 832926101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 539c90a59ef859d4e9b8420104cdf392
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      sprite alien Ordenado_0: -372420086
+      sprite alien Ordenado_1: -937567926
+      sprite alien Ordenado_2: -1345023295
+      sprite alien Ordenado_3: -742968826
+      sprite alien Ordenado_4: -2053396723
+      sprite alien Ordenado_5: 935041585
+      sprite alien Ordenado_6: 336629747
+      sprite alien Ordenado_7: 832926101
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -25,7 +25,7 @@ Transform:
   m_GameObject: {fileID: 454538405412345172}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.125, y: -0.539, z: 0}
+  m_LocalPosition: {x: -1.442, y: -0.539, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -45,7 +45,7 @@ GameObject:
   - component: {fileID: 6563345313499042386}
   - component: {fileID: 8112329716587381567}
   m_Layer: 0
-  m_Name: Alien
+  m_Name: Alien 1
   m_TagString: Untagged
   m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -66,7 +66,7 @@ Transform:
   m_Children:
   - {fileID: 224063276729277743}
   - {fileID: 2043978976265243469}
-  - {fileID: 7671366516853665956}
+  - {fileID: 7984227761271205789}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &2965565602397219033
@@ -115,7 +115,7 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: -372420086, guid: 8f477570774bce847b97763d14487f90, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
+  m_FlipX: 1
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 1, y: 1}
@@ -148,7 +148,7 @@ MonoBehaviour:
   - {fileID: 5891985019622539377, guid: 024ff414ed136ff44ab68b1db244aff8, type: 3}
   - {fileID: 8271254337609433490, guid: ead0f05d94b985942a92b15e12f1453f, type: 3}
   minAttackCount: 2
-  propu: {fileID: 0}
+  propu: {fileID: 4775031028543273193}
 --- !u!58 &6563345313499042386
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -232,13 +232,13 @@ Transform:
   m_GameObject: {fileID: 2147491022274403026}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.466, y: -0.539, z: 0}
+  m_LocalPosition: {x: -0.467, y: -0.539, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 667760124530523648}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &7392822917279936711
+--- !u!1001 &7071516375504973822
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -299,8 +299,13 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 22f859df59d0c6f479a2c0942ab4ef83, type: 3}
---- !u!4 &7671366516853665956 stripped
+--- !u!1 &4775031028543273193 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2334909451756033815, guid: 22f859df59d0c6f479a2c0942ab4ef83, type: 3}
+  m_PrefabInstance: {fileID: 7071516375504973822}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &7984227761271205789 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 931891586612396131, guid: 22f859df59d0c6f479a2c0942ab4ef83, type: 3}
-  m_PrefabInstance: {fileID: 7392822917279936711}
+  m_PrefabInstance: {fileID: 7071516375504973822}
   m_PrefabAsset: {fileID: 0}

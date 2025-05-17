@@ -17,7 +17,7 @@ public class Alien : MonoBehaviour
     [SerializeField] List<Transform> attackPositions = new List<Transform>();
     [SerializeField] List<GameObject> attackPrefabs = new List<GameObject>();
     [SerializeField] int minAttackCount = 2;
-
+    [SerializeField] private GameObject propu;
     //methods
     private void Start()
     {
@@ -76,9 +76,11 @@ public class Alien : MonoBehaviour
                 Vector2 initialPos = transform.position;
                 for (float i = 0; i < 1f; i += Time.deltaTime)
                 {
+                    propu.SetActive(true);
                     transform.position = Vector2.Lerp(initialPos, oldPosition, i / 1f);
                     yield return null;
                 }
+                propu.SetActive(false);  
                 InArea = false;
                 isRoting = true;
             }

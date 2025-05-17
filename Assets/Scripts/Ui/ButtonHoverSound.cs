@@ -28,11 +28,12 @@ public class ButtonHoverSound : MonoBehaviour, IPointerEnterHandler, IPointerExi
     }
     public void OnPointerEnter(PointerEventData eventData)
     {
-        if(fill != null) fill.color = enterColorPrimary;
+        if (fill != null) fill.color = enterColorPrimary;
 
-        if(icon != null) icon.color = enterColorSecundary;
-        if(text != null) text.color = enterColorSecundary;
-        
+        if (icon != null) icon.color = enterColorSecundary;
+        if (text != null) text.color = enterColorSecundary;
+
+        AudioManager.instance.PlayAudio(hoverSound);
     }
     public void OnPointerExit(PointerEventData eventData)
     {

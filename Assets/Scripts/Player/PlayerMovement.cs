@@ -26,7 +26,6 @@ public class PlayerMovement : MonoBehaviour
 
         rb.rotation -= move.x * speed * Time.deltaTime;
 
-        
     }
     private void Update()
     {
@@ -52,6 +51,7 @@ public class PlayerMovement : MonoBehaviour
     public void Move(InputAction.CallbackContext context)
     {
         if (GameManager.CurrentState != GameState.Gameplay) { return; }
+        if (!canMove) return;
 
         move = context.ReadValue<Vector2>();
     }

@@ -13,6 +13,7 @@ public class Player : MonoBehaviour
     [SerializeField] int maxHeath;
     int currentHealth;
     bool isInvul = false;
+    [SerializeField] Transform respawn;
     [SerializeField] Transform pointDetect;
     [SerializeField] float ratioDetect;
     [SerializeField] PlayerMovement pM;
@@ -37,7 +38,7 @@ public class Player : MonoBehaviour
         }
     }
     //identificador del jugador
-    public int PlayerID {  get => playerID;}
+    public int PlayerID { get => playerID; }
 
     //determinar si el jugador esta absorbiendo basura
     public bool IsAbsorbing { get; private set; }
@@ -70,7 +71,7 @@ public class Player : MonoBehaviour
             }
         }
 
-        if(context.canceled)
+        if (context.canceled)
         {
             pM.CanMove = true;
             IsAbsorbing = false;
@@ -102,7 +103,16 @@ public class Player : MonoBehaviour
     //metodo para cuando el jugador pierde
     void Die()
     {
+        pM.CanMove = false;
+        animator.Play("Death");
 
+    }
+    public void Respawn()
+    {
+        transform.position = respawn.position;
+        transform.rotation = respawn.rotation;
+        CurrentHealth = maxHeath;
+        animator.Play("Idle");
     }
     IEnumerator DamageAnim()
     {
@@ -125,4 +135,5 @@ public class Player : MonoBehaviour
     {
         Gizmos.DrawWireSphere(pointDetect.position, ratioDetect);
     }
+    
 }

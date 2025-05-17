@@ -1,0 +1,361 @@
+fileFormatVersion: 2
+guid: 6c8f68746ee5dc44985278019f24e8fd
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 9116539638109938107
+    second: "Exploci\xF3n_0"
+  - first:
+      213: 7984568241443299527
+    second: "Exploci\xF3n_1"
+  - first:
+      213: -6648972908491559160
+    second: "Exploci\xF3n_2"
+  - first:
+      213: 7635875011793505760
+    second: "Exploci\xF3n_3"
+  - first:
+      213: -5130427840062763412
+    second: "Exploci\xF3n_4"
+  - first:
+      213: 4328454791687870181
+    second: "Exploci\xF3n_5"
+  - first:
+      213: -3113951120598484758
+    second: "Exploci\xF3n_6"
+  - first:
+      213: -2775927125010333155
+    second: "Exploci\xF3n_7"
+  - first:
+      213: -7658586496587337284
+    second: "Exploci\xF3n_8"
+  - first:
+      213: 7662124464891485129
+    second: "Exploci\xF3n_9"
+  - first:
+      213: -7774749566176502440
+    second: "Exploci\xF3n_10"
+  - first:
+      213: 5488805056995401204
+    second: "Exploci\xF3n_11"
+  - first:
+      213: -1630374846161422072
+    second: "Exploci\xF3n_12"
+  - first:
+      213: 3629590300309446602
+    second: "Exploci\xF3n_13"
+  - first:
+      213: 5978949804952736996
+    second: "Exploci\xF3n_14"
+  - first:
+      213: 1038250484202206461
+    second: "Exploci\xF3n_15"
+  - first:
+      213: -6307802451926645133
+    second: "Exploci\xF3n_16"
+  - first:
+      213: -5367577100782113292
+    second: "Exploci\xF3n_17"
+  - first:
+      213: 4015258606830003666
+    second: "Exploci\xF3n_18"
+  - first:
+      213: 6458446071349661834
+    second: "Exploci\xF3n_19"
+  - first:
+      213: -1250941622713751170
+    second: "Exploci\xF3n_20"
+  - first:
+      213: 6156900356273411260
+    second: "Exploci\xF3n_21"
+  - first:
+      213: -3052048544699405015
+    second: "Exploci\xF3n_22"
+  - first:
+      213: 2318094116095872843
+    second: "Exploci\xF3n_23"
+  - first:
+      213: -8711907306302580134
+    second: "Exploci\xF3n_24"
+  - first:
+      213: 4676142230865886733
+    second: "Exploci\xF3n_25"
+  - first:
+      213: 2433317530751063496
+    second: "Exploci\xF3n_26"
+  - first:
+      213: -8814383376240271682
+    second: "Exploci\xF3n_27"
+  - first:
+      213: 6426328910784941887
+    second: "Exploci\xF3n_28"
+  - first:
+      213: 3180312522676689775
+    second: "Exploci\xF3n_29"
+  - first:
+      213: 1038085546063802131
+    second: "Exploci\xF3n_30"
+  - first:
+      213: 3398256903296766973
+    second: "Exploci\xF3n_31"
+  - first:
+      213: -339134547747726882
+    second: "Exploci\xF3n_32"
+  - first:
+      213: -4019578709740959765
+    second: "Exploci\xF3n_33"
+  - first:
+      213: 3815047690971046273
+    second: "Exploci\xF3n_34"
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 600
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: "Exploci\xF3n_0"
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 400
+        width: 900
+        height: 900
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c7ae48c261685f418294d67d6180ebf
+      internalID: 9116539638109938107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Exploci\xF3n_1"
+      rect:
+        serializedVersion: 2
+        x: 980
+        y: 400
+        width: 900
+        height: 896
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ea092ce7f163f94e9539ca1966274d7
+      internalID: 7984568241443299527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Exploci\xF3n_2"
+      rect:
+        serializedVersion: 2
+        x: 2113
+        y: 400
+        width: 900
+        height: 900
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52fc0eade7d3447468a4efebc00e426e
+      internalID: -6648972908491559160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Exploci\xF3n_3"
+      rect:
+        serializedVersion: 2
+        x: 3410
+        y: 400
+        width: 900
+        height: 900
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2af9bb60fd445f5449db55b639893096
+      internalID: 7635875011793505760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Exploci\xF3n_4"
+      rect:
+        serializedVersion: 2
+        x: 4700
+        y: 400
+        width: 900
+        height: 900
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dba2ca7a56fd9fd41812252a18d3b14e
+      internalID: 1875362410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Exploci\xF3n_6"
+      rect:
+        serializedVersion: 2
+        x: 5850
+        y: 400
+        width: 900
+        height: 900
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4b1dae3c7e5eb1409e6fb70299f7010
+      internalID: 91760207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 663276a05472ad84ead764f280fc3ad8
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      "Exploci\xF3n_0": 9116539638109938107
+      "Exploci\xF3n_1": 7984568241443299527
+      "Exploci\xF3n_2": -6648972908491559160
+      "Exploci\xF3n_3": 7635875011793505760
+      "Exploci\xF3n_4": 1875362410
+      "Exploci\xF3n_5": 552832748
+      "Exploci\xF3n_6": 91760207
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
