@@ -22,6 +22,9 @@ public class Player : MonoBehaviour
     [SerializeField] private Animator animator;
     [SerializeField] private SpriteRenderer spriteRenderer;
     [SerializeField] private Color damageColor;
+
+    [Header("Audio")]
+    [SerializeField] private AudioSource audioSource;
     //properties
     //controla la vida del jugador
     public int CurrentHealth
@@ -43,6 +46,10 @@ public class Player : MonoBehaviour
     //determinar si el jugador esta absorbiendo basura
     public bool IsAbsorbing { get; private set; }
     //methods
+    void Start()
+    {
+        CurrentHealth = maxHeath;
+    }
 
     //metodo para recoger los objetos(la basura)
     public void GetObj(InputAction.CallbackContext context)
@@ -106,6 +113,10 @@ public class Player : MonoBehaviour
         pM.CanMove = false;
         animator.Play("Death");
 
+    }
+    public void PlayAudio(AudioClip clip)
+    {
+        audioSource.PlayOneShot(clip);
     }
     public void Respawn()
     {

@@ -18,6 +18,8 @@ public class Alien : MonoBehaviour
     [SerializeField] List<GameObject> attackPrefabs = new List<GameObject>();
     [SerializeField] int minAttackCount = 2;
     [SerializeField] private GameObject propu;
+
+    [SerializeField] private Animator animator; 
     //methods
     private void Start()
     {
@@ -94,7 +96,7 @@ public class Alien : MonoBehaviour
         pos.AddRange(attackPositions);
         List<GameObject> objects = new List<GameObject>();
         objects.AddRange(attackPrefabs);
-
+        animator.Play("AttackAlien");
         for (int i = 0; i < count; i++)
         {
             int indexP = Random.Range(0, pos.Count);

@@ -11,8 +11,7 @@ public class AudioManager : Singleton<AudioManager>
     //methods
     public void PlayAudio(AudioClip clip)
     {
-        audioSource.clip = clip;
-        audioSource.Play();
+        audioSource.PlayOneShot(clip);
     }
 
 }
