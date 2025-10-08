@@ -117,6 +117,32 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -309,7 +335,15 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      "sprite alien Animaci\xF3n tentaculo IZQ_0": -4952437680540234632
+      "sprite alien Animaci\xF3n tentaculo IZQ_1": -3383218121973548201
+      "sprite alien Animaci\xF3n tentaculo IZQ_2": 4467516676654029064
+      "sprite alien Animaci\xF3n tentaculo IZQ_3": 2082899870890490639
+      "sprite alien Animaci\xF3n tentaculo IZQ_4": -8197567194462207629
+      "sprite alien Animaci\xF3n tentaculo IZQ_5": 9161721469795440133
+      "sprite alien Animaci\xF3n tentaculo IZQ_6": -861653951826347325
+      "sprite alien Animaci\xF3n tentaculo IZQ_7": -5508480525484209305
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
