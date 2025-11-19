@@ -7,6 +7,8 @@ public class Planet : Singleton<Planet>
     int currentHealth;
     [SerializeField] Sprite[] sprites;
     [SerializeField] SpriteRenderer spriteRenderer;
+
+    [SerializeField] GameObject[] players;
     //properties
     protected override bool persistent => false;
 
@@ -52,6 +54,19 @@ public class Planet : Singleton<Planet>
         if (collision.TryGetComponent(out Trush trush))
         {
             CurrentHealth--;
+        }
+    }
+
+    public void verifyPlayersState()
+    {
+        for (int i = 0; i < players.Length; i++)
+        {
+            if (players[i].activeSelf == true)
+            {
+                return;
+            }
+
+            GameOver();
         }
     }
     private void GameOver()

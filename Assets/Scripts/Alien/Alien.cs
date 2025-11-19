@@ -113,6 +113,7 @@ public class Alien : MonoBehaviour
         if (collision.gameObject.CompareTag("DetectAlien"))
         {
             InArea = true;
+            Debug.Log("llegue al limite");
         }
     }
 }

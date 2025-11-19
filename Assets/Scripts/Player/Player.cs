@@ -147,4 +147,9 @@ public class Player : MonoBehaviour
         Gizmos.DrawWireSphere(pointDetect.position, ratioDetect);
     }
     
+    public void DesactivePlayer()
+    {
+        gameObject.SetActive(false);
+        Planet.instance.verifyPlayersState();
+    }
 }
