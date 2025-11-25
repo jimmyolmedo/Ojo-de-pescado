@@ -103,8 +103,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objID: 1
-  speed: 0.5
+  speed: 15
   speedRotation: 50
+  velocity: {x: 0, y: 0, z: 0}
+  rb: {fileID: 6932579453991700395}
 --- !u!61 &8533831986640868781
 BoxCollider2D:
   m_ObjectHideFlags: 0

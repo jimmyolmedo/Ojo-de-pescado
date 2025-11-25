@@ -6,9 +6,10 @@ public class Trush : MonoBehaviour
     [SerializeField] int objID;
     [SerializeField] float speed;
     [SerializeField] private float speedRotation;
+    [SerializeField] Vector3 velocity;
+    [SerializeField] Rigidbody2D rb;
     
-    
-    Vector2 target;
+    Vector3 target;
 
     //properties
     public float Speed { get => speed; set => speed = value; }
@@ -17,14 +18,24 @@ public class Trush : MonoBehaviour
     private void Start()
     {
         target = Planet.instance.transform.position;
+        velocity = target - transform.position;
     }
 
     private void Update()
     {
         if (GameManager.CurrentState == GameState.Gameplay)
         {
-            transform.position = Vector3.MoveTowards(transform.position, target, speed * Time.deltaTime);
-            transform.Rotate(new Vector3(0,0, speedRotation * Time.deltaTime)); 
+            transform.Rotate(new Vector3(0,0, speedRotation * Time.deltaTime));
+            velocity = target - transform.position;
+            velocity.Normalize();   
+        }
+    }
+
+    private void FixedUpdate()
+    {
+        if(GameManager.CurrentState == GameState.Gameplay)
+        {
+            rb.linearVelocity = velocity * speed * Time.deltaTime;
         }
     }
 

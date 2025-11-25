@@ -6,6 +6,7 @@ public class DarkHole : MonoBehaviour
     public float atractionForce;
     public float rangeAtraction;
     public float timeToDisappear;
+    [SerializeField] GameObject obj;
 
     private void OnEnable()
     {
@@ -38,7 +39,7 @@ public class DarkHole : MonoBehaviour
     IEnumerator Disappear()
     {
         yield return new WaitForSeconds(timeToDisappear);
-        gameObject.SetActive(false);
+        obj.SetActive(false);
     }
 
     void OnDrawGizmos()
@@ -52,7 +53,7 @@ public class DarkHole : MonoBehaviour
         if(collision.TryGetComponent(out Player player))
         {
             player.GetDamage(1);
-            gameObject.SetActive(false);
+            obj.SetActive(false);
         }
     }
 }

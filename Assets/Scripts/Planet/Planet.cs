@@ -65,9 +65,9 @@ public class Planet : Singleton<Planet>
             {
                 return;
             }
-
-            GameOver();
         }
+
+        GameOver();
     }
     private void GameOver()
     {

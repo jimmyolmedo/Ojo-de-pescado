@@ -103,8 +103,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objID: 0
-  speed: 0.5
+  speed: 15
   speedRotation: 50
+  velocity: {x: 0, y: 0, z: 0}
+  rb: {fileID: 1473500406595272930}
 --- !u!70 &3632453238548233695
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
