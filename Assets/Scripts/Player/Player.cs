@@ -124,6 +124,7 @@ public class Player : MonoBehaviour
         transform.rotation = respawn.rotation;
         CurrentHealth = maxHeath;
         animator.Play("Idle");
+        pM.CanMove = true;
     }
     IEnumerator DamageAnim()
     {
