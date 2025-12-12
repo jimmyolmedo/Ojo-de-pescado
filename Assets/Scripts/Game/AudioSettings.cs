@@ -11,7 +11,7 @@ public class AudioSettings : MonoBehaviour
 
     private void Start()
     {
-        if (PlayerPrefs.HasKey(parameterName))
+        if (PlayerPrefs.HasKey(saveName))
         {
             LoadVolume();
         }
@@ -30,7 +30,7 @@ public class AudioSettings : MonoBehaviour
 
     public void LoadVolume()
     {
-        volumeSlider.value = PlayerPrefs.GetFloat(parameterName);
+        volumeSlider.value = PlayerPrefs.GetFloat(saveName);
         SetVolume();
     }
 }
